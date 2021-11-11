@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+
+<body>
+    <header>
+        <h1>Formularios</h1>
+    </header>
+
+    <main>
+        <h2>Completa el formulario para ser usuario</h2>
+
+        <p>Completando la inscripcion te regalamos un pito</p>
+
+        <!-- GET manda los datos por la barra de direcciones, y ademas lo podemos ver en la pestaña network! POST en cambio no lo expone de esa forma -->
+        <form method="POST">
+            <h3>Ingresa tus datos!</h3>
+            <!-- input text -->
+            <!-- EL label le da el foco, y,si el input no esta dentro del label, se los relaciona usano el for, que tiene que coincidir con el id -->
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Martín" maxlength="10" minlength="2" disabled />
+
+            <!-- el id es unico e irrepetible. El class si se puede repetir -->
+            <!-- Si anidamos input dentro de label, el for no es necesario-->
+            <label> Apellido:
+                <input type="text" id="apellido" value="Morales" maxlength="10" minlength="2" required />
+            </label>
+
+            <br>
+            <br>
+
+            <!-- input password -->
+            <label> Password:
+                <input type="password" name="password" id="password" placeholder="poné una clave que solo vos sepas" />
+            </label>
+
+            <br>
+
+            <!-- textarea -->
+            <h3>Decinos lo que opinás</h3>
+            <textarea name="comentario" id="comentario" cols="30" rows="10"
+                placeholder="qué opinas de nosotros?"></textarea>
+
+            <br>
+
+            <!-- inputs checkbox -->
+            <h3>Elegí cuántas comidas querés!</h3>
+            <label>
+                <!-- el value es el valor de lo que el usuario elige, o escribe -->
+                <input type="checkbox" name="desayuno" id="" value="desayuno" checked>Desayuno
+            </label>
+            <label>
+                <!-- cuando esta dentro del label, el texto es clickeable también. Si no tiene el label solo la caja se puede clickear -->
+                <input type="checkbox" name="merienda" id="" value="merienda">Merienda
+            </label>
+
+            <input type="checkbox" name="cena" id="" value="cena" disabled>Cena
+
+
+            <!-- inputs radio -->
+            <h3>Elegí cuánto donar!</h3>
+            <!-- Los name en un conjunto de radios tienen que coincidir -->
+            <label>
+                <input type="radio" name="donacion" id="valor1" value="50">$50
+            </label>
+
+            <label>
+                <input type="radio" name="donacion" id="valor2" value="150">$150
+            </label>
+
+            <label>
+                <input type="radio" name="donacion" id="valor3" value="250" checked>$250
+            </label>
+
+            <!-- select único-->
+            <h3>Elegí tus materias!</h3>
+            <select name="materias" id="materia">
+                <option value="lengua">Lengua </option>
+                <option value="ingles">Inglés </option>
+                <option value="programacion">Programación </option>
+                <option value="matematica" selected>Matemática </option>
+                <option value="geografia">Geografía </option>
+            </select>
+
+            <!-- select multiple-->
+            <h3>Elegí tus materias!</h3>
+            <select name="materias" id="materias" multiple>
+                <option value="lengua">Lengua </option>
+                <option value="ingles">Inglés </option>
+                <option value="programacion">Programación </option>
+                <option value="matematica" selected>Matemática </option>
+                <option value="geografia">Geografía </option>
+            </select>
+
+            <!-- file upload -->
+            <h3>Subítu foto!</h3>
+            <!-- separando con comas el accept, podemos poner varios tipos de archivos que se pueden subir-->
+            <input type="file" name="imagenes" id="imagen" accept="image/*, audio/*">
+
+            <h3>Decinos tu cumple!</h3>
+            <label>
+                Contanos cuando cumplís años:
+                <input type="date" name="date" id="date">
+            </label>
+            
+
+            <h3>Envianos tus datos</h3>
+            <input type="submit" name="submit" value="Enviar">
+
+        </form>
+            
+    </main> 
+</body> 
+</html>

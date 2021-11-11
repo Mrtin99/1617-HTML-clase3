@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel para mascotas</title>
+</head>
+
+<body>
+    <header>
+        <h1>Hotel para mascotas!</h1>
+        <p>Llená la solicitud para poder conocer más acerca de tu mascota o mascotas.</p>
+    </header>
+
+    <main>
+        <h2>Formulario de admisión a Hotel para mascotas</h2>
+        <p>Al finalizar apreta el boton "Enviar" para que admision pueda revisar tus datos</p>
+        <p>Te llegará un mail a tu casilla de correo </p>
+        <p>Muchas gracias</p>
+
+        <form method="post">
+
+            <h3>Ingresa tus datos principales para tener acceso al hotel</h3>
+
+            <label>Nombre:
+                <input type="text" name="nombre" id="nombre" placeholder="Juan" maxlength="25" minlength="2">
+            </label>
+
+            <label>Apellido:
+                <input type="text" name="apellido" id="apellido" placeholder="Perez" maxlength="25" minlength="2">
+            </label>
+            <br>
+            <br>
+            <br>
+
+            <label>Contraseña
+                <input type="password" name="password" id="password" placeholder="poné una clave que solo vos sepas">
+            </label>
+            <br>
+            <br>
+
+            <label>Repite la contraseña
+                <input type="password" name="rep_password" id="password">
+            </label>
+            <br>
+            <br>
+
+            <label>
+                Mail:
+                <input type="email" name="correo" id="correo">
+            </label>
+
+
+            <h3>Ahora queremos conocerte a vos!</h3>
+
+            <h4>Edad:</h4>
+            <label>
+                Selecciona tu fecha de nacimiento:
+                <input type="date" name="edad" id="edad">
+            </label>
+
+            <h4>Cuenta con trabajo estable? y/o en blanco?</h4>
+            <label>
+                <input type="radio" name="trabajo" id="valor1" value="si">SI
+            </label>
+
+            <label>
+                <input type="radio" name="trabajo" id="valor2" value="no">NO
+            </label>
+
+            <h4>Lugar de Buenos Aires en donde vive:</h4>
+            <select name="zona" id="zona">
+                <option value="caba">CABA</option>
+                <option value="sur" selected>Zona Sur</option>
+                <option value="norte">Zona Norte</option>
+                <option value="oeste">Zona Oeste</option>
+                <option value="este">Zona Este</option>
+                <option value="otro">Otro</option>
+            </select>
+
+            <h4>Número de celular:</h4>
+            <label>
+                Código de area:
+                <input type="text" name="cod_celular" id="cod_celular" placeholder="Ejemplo: 011">
+            </label>
+
+            <label>
+                Número:
+                <input type="text" name="num_celular" id="num_celular" placeholder="Ejemplo: 51143093">
+            </label>
+
+            <br>
+            <br>
+            <br>
+
+            <h3>Es el turno de las mascotas:</h3>
+            <h4>Cuantas mascotas se van a hospedar en el hotel?:</h4>
+            <label>
+                <input type="radio" name="mascotas" id="mascota1" value="1">1
+            </label>
+
+            <label>
+                <input type="radio" name="mascotas" id="mascota2" value="2">2
+            </label>
+
+            <label>
+                <input type="radio" name="mascotas" id="mascota3" value="3">3
+            </label>
+
+            <label>
+                <input type="radio" name="mascotas" id="mascota4" value="4">4
+            </label>
+
+            <label>
+                <input type="radio" name="mascotas" id="mascota5" value="5">5
+            </label>
+
+            <h4>Que tipo de mascotas son?:</h4>
+            <select name="tipo_mascota" id="tipo_mascota" multiple>
+                <option value="perro">Perro</option>
+                <option value="gato">Gato</option>
+                <option value="ave">Ave</option>
+                <option value="pez">Peces</option>
+                <option value="roedor">Roedor</option>
+            </select>
+
+            <h4>Cuales son sus nombres?:</h4>
+            <p>En caso de ser una solo rellene un solo espacio.</p>
+
+            <label>Nombre:
+                <input type="text" name="nombre_mascota1" id="nombre_mascota">
+            </label>
+            <br>
+            <br>
+            <label>Nombre:
+                <input type="text" name="nombre_mascota2" id="nombre_mascota">
+            </label>
+            <br>
+            <br>
+            <label>Nombre:
+                <input type="text" name="nombre_mascota3" id="nombre_mascota">
+            </label>
+            <br>
+            <br>
+            <label>Nombre:
+                <input type="text" name="nombre_mascota4" id="nombre_mascota">
+            </label>
+
+            <h4>Tiempo de hospedaje:</h4>
+            <select name="hospedaje" id="hospedaje">
+                <option value="dias">Días</option>
+                <option value="semanas">Semanas</option>
+                <option value="mes">Mes</option>
+                <option value="Otro">Otro</option>
+            </select>
+
+            <p>En caso de ser dias, cuantos?</p>
+            <label>
+                <input type="radio" name="dias_hospedaje" id="dias_hospedaje1">1 día
+            </label>
+            <label>
+                <input type="radio" name="dias_hospedaje" id="dias_hospedaje2">2 días
+            </label>
+            <label>
+                <input type="radio" name="dias_hospedaje" id="dias_hospedaje3">3 días
+            </label>
+            <label>
+                <input type="radio" name="dias_hospedaje" id="dias_hospedaje4">4 días
+            </label>
+            <label>
+                <input type="radio" name="dias_hospedaje" id="dias_hospedaje5">5 días
+            </label>
+            <label>
+                <input type="radio" name="dias_hospedaje" id="dias_hospedaje6">6 días
+            </label>
+
+            <p>En caso de ser semanas, cuantas?</p>
+            <label>
+                <input type="radio" name="semana_hospedaje" id="semana_hospedaje1">1 semana
+            </label>
+            <label>
+                <input type="radio" name="semana_hospedaje" id="semana_hospedaje2">2 semanas
+            </label>
+            <label>
+                <input type="radio" name="semana_hospedaje" id="semana_hospedaje3">3 semanas
+            </label>
+
+            <p>En caso de ser otro, comentenos acerca del hospedaje que necesita:</p>
+            <textarea name="otro_hospedaje" id="otro_hospedaje" cols="30" rows="10"
+                placeholder="Escribe aquí"></textarea>
+
+            <h4>Mostranos una foto de tus mascotas:</h4>
+            <input type="file" name="imagenes" id="imagenes" accept="image/*">
+            <br>
+            <br>
+
+            <h4>Ahora sí, revisa tus datos y dale a enviar. Esperemos que tu mascota pueda hospedarse con nosotros</h4>
+            <input type="submit" name="submit" value="Enviar">
+
+
+        </form>
+
+    </main>
+
+
+
+</body>
+
+</html>
